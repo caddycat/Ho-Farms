@@ -1,0 +1,228 @@
+/* HEROS*/
+
+.hero h1,
+.hero h2 {
+	font-size: 3em;
+	line-height: 1.1em;
+	max-width: 10em;
+}
+.hero p {
+	max-width: 22em;
+} 
+
+.hero.centeredtext h1, 
+.hero.centeredtext h2, 
+.hero.centeredtext p {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*HOMEPAGE*/
+
+
+.homepage .hero {
+	background-image: url("../img/homepage/herobackground.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	background-color: $section-color1;
+	padding-bottom: 250px; 
+	
+	@media (min-width: $breakpoint-large){
+		padding-bottom: 35%;
+		}
+	@media (max-width: 768px){
+		padding-bottom: 600px;
+		}
+	@media (max-width: 450px){
+	padding-bottom: 380px;
+	}
+
+}
+.homepage .hero .missionstatement {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10em;
+	z-index: 1;
+
+}
+
+.homepage .hero #veggies {
+  background-image: url("../img/homepage/hero-veggies.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+  min-height: 1153px; 
+	
+	@media (min-width: 1500px ) {
+  	background-size: 100%;
+	}
+	
+	@media (max-width: 1350px ) {
+  	background-size: 105%;
+	}
+	@media (max-width: 1150px ) {
+  background-size: 110%;
+	}
+	@media (max-width: 1050px ) {
+  	background-size: 110%;
+	}	
+	@media (max-width: 850px ) {
+  	background-size: 130%;
+	}
+	@media (max-width: 768px ) {
+  	background-size: 200%;
+		background-position: 30%;
+		top: -80px;
+	}
+	@media (max-width: 450px ) {
+  	background-size: 300%;
+		background-position: 20%;
+		top: -190px;
+	}
+}
+
+/*ABOUT US (OUR FAMILY)*/
+
+
+.ourfamily .hero {
+	background-image: url("../img/aboutus/ourfamily_hero.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	padding: 25em 0 20em 0;
+}
+
+/*ABOUT US (OUR FARM)*/
+
+.ourfarm .hero {
+	background-image: url("../img/aboutus/ourfarm_hero.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	padding: 25em 0 20em 0;
+	
+	@media (max-width: 767px){
+		background-position: right top;	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////.homepage .hero #beans {
+//	background-image: url(../img/homepage/beans.png);
+//	background-repeat: no-repeat;
+//	background-size: auto;
+//	background-position: center top;
+//  display: block;
+//  position: absolute;
+//  top: -25%;
+//  left: -25%;
+//  width: 100%;
+//  height: 150%; 
+//  min-height: 1153px; 
+//	
+//	@media (max-width: $breakpoint-small ) {
+//		background: none;
+//	}
+//	
+//}
+//.homepage .hero #tomatobunch {
+//	background-image: url(../img/homepage/tomatobunch.png);
+//	background-repeat: no-repeat;
+//	background-size: auto;
+//	background-position: center top;
+//  display: block;
+//  position: absolute;
+//  top: -10%;
+//  right: -25%;
+//  width: 100%;
+//  height: 150%; 
+//  min-height: 576px; 
+	
+//	@media (max-width: $breakpoint-small ) {
+//		background: none;
+//	}
+//	/*
+//	display: block;
+//	position: absolute;
+//	top: -70px;
+//	right: -30px;
+//	z-index: 1;*/
+//}
+//.homepage .hero #saltbowl {
+//	background-image: url(../img/homepage/saltbowl.png);
+//	background-repeat: no-repeat;
+//	background-size: 59%;
+//	background-position: left top;
+//  display: block;
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 383px;
+//  height: 342px; 
+//	background: rgba(255,0,0,.2);
+//	@media (max-width: $breakpoint-small ) {
+//		//background: none; 
+//	}
+//	/*
+//	display: block;
+//	position: absolute;
+//	bottom: -100px;
+//	right: 30px;*/
+//}

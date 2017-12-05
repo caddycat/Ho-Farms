@@ -1,0 +1,80 @@
+/* BASE CONTENT (TYPOGRAPHY) */
+
+/* BASE CONTENT (BODY) */
+body {
+  font-family: $body-font;
+  font-size: 87.5%; /* 16px */
+  line-height: 1.5em; /* 16px * 1.5 em= 24px */
+  background: $body-color;
+  color: $text-color;
+  padding: 1em;
+}
+
+/* BASE CONTENT (HEADINGS)
+based on typographic scale
+16 18 21 24 36 48 */
+
+ h1, h2, h3, h4, h5, h6 {
+   margin: .5em 0;
+ }
+h1 {
+  font-size: 3em; /* 48px/16px=3em */
+  line-height: 1em;
+}
+h2 {
+  font-size: 2.25em; /* 36px/16px=2.25em */
+  line-height: 1.1em;
+	font-family: $heading-font;
+}
+h3 {
+  font-size: 1.5em; /* 24px/16px=1.5em */
+  line-height: 1.2em;		
+	font-family: $heading-font;		
+}
+h4 {
+  font-size: 1.3125em; /* 21px/16px=1.3125em */
+  line-height: 1.3em;
+}
+h5 {
+  font-size: 1.125em; /* 18px/16px=1.125em */
+  line-height: 1.4em;
+}
+h6 {
+  font-size: 1em; /* 16px/16px=1em */
+  line-height: 1.5em;
+}
+
+
+
+/* BASE CONTENT (PARAGRAPHS) */
+p {
+  margin: 0 0 .5em 0;
+	font-size: 87.5%;
+}
+
+
+/* BASE CONTENT (LINKS) */
+a {color: $link-color; text-decoration: none;}
+a:hover, a:visited, a:focus {color: $link-color-hover; text-decoration: none;
+}
+
+
+
+/* BASE CONTENT (LISTS) */
+
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+	
+ul, ol {
+  margin-bottom: 1em;
+}
+ul ul, ol ul, ul ol, ol ol {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+li {
+  margin-left: 1.5em;
+}

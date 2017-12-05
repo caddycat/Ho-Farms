@@ -1,0 +1,50 @@
+/* #HELPERS */
+.text-centered {
+  text-align: center;
+	}
+
+	.justify-right {
+		text-align: right;
+	}
+
+	.justify-left {
+		text-align: left;
+	}
+
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+img.scale-with-grid {
+ max-width: 100%;
+ height: auto;
+}
+
+.overlap {
+	position: relative;
+	z-index: 4;
+	}
+
+/* subheading 'sue ellen' font */
+.subhead {
+	font-size: 16px;
+	font-family: $subhead-font;
+	line-height: 1.4em;
+}
+
+.hide-on-small,
+section .heading img.icon.hide-on-small {
+	@media (max-width: $breakpoint-small) {	
+			//display: none;
+	}
+}
+
+.hide-on-large,
+section .heading img.icon.hide-on-large{ 
+	@media (min-width: $breakpoint-small) {	
+			//display: none;
+	}
+}

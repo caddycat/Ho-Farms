@@ -1,0 +1,148 @@
+/* SITE NAVIGATION */
+
+.site-navigation {
+	text-align: center;
+}
+.site-navigation ul {
+	//position: absolute;
+	//right: 30px;
+	margin: 0;
+	padding: 0;
+}
+.site-navigation ul li {
+	font-family: $navigation-font;
+	font-size: 70%;
+	letter-spacing: .1em;
+	list-style: none;
+	display: inline-block;
+	margin-left: 0;
+}
+.site-navigation ul li a {
+	color: $link-color;
+	display: block;
+	padding: 1.5em 1.2em;
+}
+.site-navigation ul li a:hover {
+	color: $accent-color;
+	//font-weight: 700
+}
+
+.site-navigation ul li.selected a, {
+		color: $accent-color;
+		font-weight: bolder;
+}
+	
+	
+.site-footer .site.navigation ul {
+	border-top: none;
+}
+@media (min-width: 768px){
+	.site-header .site-navigation {
+		float: right;
+		}
+	.site-header .site-navigation ul {
+		border-top: none;
+		margin-top: 0;
+		}
+}
+/* NAVICON MENU */
+.menu-button.navicon {
+	color: rgba(0,0,0,0);
+}
+.menu-button.navicon:after {
+	color: #fff;
+	content: '\2630';
+	font-size: 1.5em;
+	cursor: pointer;
+	width: 1em;
+	height: 1em;
+	line-height: 1em;
+	display: block;
+	float: right;
+	transition: all .3s;	
+}
+.menu-button.navicon.expanded:after {
+	content: '\2715';
+	transform: rotate(90deg);
+}
+
+
+/* TOGGLE NAV */
+
+.toggle-nav .menu-button {
+	 display: none;
+}
+
+@media (max-width: 767px) {
+	
+	.toggle-nav .site-branding {
+			float: left;
+		}
+	.toggle-nav .menu-button {
+			display: block;
+			float: right;
+			margin-top: .9em;
+			margin-bottom: 1.1em;
+		}
+	.toggle-nav .menu-button + ul {
+			clear: both;
+			display: none;
+			width: 100%;
+		}
+	.toggle-nav .menu-button + ul li {
+			clear: both;
+			display: block;
+			float: none;
+			padding: .5em 0;
+		}
+	.toggle-nav .menu-button + ul li ul {
+			position: static;
+			//left: auto;
+		}
+	.toggle-nav .menu-button + ul li a {
+			padding: .75em;
+			display: block;
+			transition: all .3s ease;
+		}
+	.toggle-nav .menu-button + ul li a:hover {
+			background-color: none;
+			color: $accent-color;
+		}	
+	.toggle-nav .menu-button.expanded + ul {
+			display: block;
+			clear: both;
+		}
+}
+
+/* add arrows */
+nav ul li {
+  position: relative;
+}
+nav ul li.arrow:after {
+  content: "\25bc";
+  display: block;
+  position: absolute;
+  top: 1.7em;
+  right: -.3em;
+  font-size: .5em;
+  color: $accent-color;
+}
+
+/* hide nested lists */
+nav ul li ul {
+  position: absolute;
+	//left: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .2s ease-out;
+	background: $header-color;
+}
+nav ul li ul li {
+	min-width: 110px;
+}
+
+/* show nested list on hover */
+nav ul li:hover ul {
+  max-height: 900px;
+  transition: all 2s ease-out;
+}
